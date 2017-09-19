@@ -1,27 +1,18 @@
-//Objects and the dot
+// Functions are Objects!!
 
-var person = new Object();
+// Functions are first class
+// Functions can have different properties, primitives, objects, other functions
+// Special properties of functions: Name (optional), custom Code (we write)
+// The code we write inside the function body gets placed into a special property of the function object
+// The code property of a function is 'invocable' ()
 
-// Computed member access operator (object bracket notation)
-person['firstname'] = 'Juri';
-person['lastname'] = 'Thommen';
+function greet() {
+    console.log('Hi');
+}
 
-var firstNameProperty = 'firstname';
+greet.language = 'english';
+console.log(greet.language);
+console.log(greet['language']);
 
-console.log(person); // Object
-console.log(person[firstNameProperty]); // Retrieved object property with member access operator
-
-
-// Member access operator (object dot notation)
-console.log(person.firstname);
-console.log(person.lastname);
-
-person.address = new Object();
-person.address.street = '12 Hill of Down House';
-person.address.city = 'Dublin';
-person.address.country = 'Ireland';
-
-console.log(person['address']['street']);
-
-
-// Tip: Use dot operator (member access operator) except a dynamic string accessor method is absolutely needed
+console.log(greet);
+greet();
