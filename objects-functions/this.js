@@ -39,7 +39,7 @@ var d = {
         }
 
         setname('Updated d object!');
-        console.log(this); // refers to global object
+        console.log(this); // refers to d object
     }
 }
 
