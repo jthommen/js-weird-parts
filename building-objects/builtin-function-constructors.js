@@ -16,3 +16,8 @@ String.prototype.isLengthGreatherThan = function(limit) {
 console.log(b.isLengthGreatherThan(3));
 
 // Confusing because those objects look like primitives, but are objects
+
+// Tip: Use momentjs if working with dates a lot
+
+// Warning: Can be dangerous
+// because aren't real primitives === fails (primitive compared to object)
